@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="1e7c5c65-83cc-4959-8ac5-0ac15786fd48" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:1558/DemoUserInfoDBServiceWCF.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="DemoUserInfoDBServiceWCF.disco" MetadataType="Disco" ID="47c8d063-df61-4bfd-abf2-89e85b15c38d" SourceId="1" SourceUrl="http://localhost:1558/DemoUserInfoDBServiceWCF.svc?disco" />
+    <MetadataFile FileName="DemoUserInfoDBServiceWCF.xsd" MetadataType="Schema" ID="f0bcf97e-ac34-4ac9-b087-742a28a8e41f" SourceId="1" SourceUrl="http://localhost:1558/DemoUserInfoDBServiceWCF.svc?xsd=xsd1" />
+    <MetadataFile FileName="DemoUserInfoDBServiceWCF.wsdl" MetadataType="Wsdl" ID="b3c0b3e9-d2af-42f3-9913-6e55cdf0c720" SourceId="1" SourceUrl="http://localhost:1558/DemoUserInfoDBServiceWCF.svc?wsdl" />
+    <MetadataFile FileName="DemoUserInfoDBServiceWCF1.xsd" MetadataType="Schema" ID="bb986290-a4c3-49b2-8489-1ba682af553c" SourceId="1" SourceUrl="http://localhost:1558/DemoUserInfoDBServiceWCF.svc?xsd=xsd2" />
+    <MetadataFile FileName="DemoUserInfoDBServiceWCF2.xsd" MetadataType="Schema" ID="c86fbd19-a6a2-4b02-be58-0f8ed5618234" SourceId="1" SourceUrl="http://localhost:1558/DemoUserInfoDBServiceWCF.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

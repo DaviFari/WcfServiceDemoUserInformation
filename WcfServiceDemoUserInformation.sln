@@ -5,6 +5,11 @@ VisualStudioVersion = 15.0.27703.2026
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfServiceDemoUserInformation", "WcfServiceDemoUserInformation\WcfServiceDemoUserInformation.csproj", "{CE66DB82-C7E2-4298-AF8C-7FBC24F48AA6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormWCFServiceDemoUserInfo", "WinFormWCFServiceDemoUserInfo\WinFormWCFServiceDemoUserInfo.csproj", "{181C7F1B-F052-4569-9C39-624D0CBCADAA}"
+	ProjectSection(ProjectDependencies) = postProject
+		{CE66DB82-C7E2-4298-AF8C-7FBC24F48AA6} = {CE66DB82-C7E2-4298-AF8C-7FBC24F48AA6}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +20,10 @@ Global
 		{CE66DB82-C7E2-4298-AF8C-7FBC24F48AA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CE66DB82-C7E2-4298-AF8C-7FBC24F48AA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CE66DB82-C7E2-4298-AF8C-7FBC24F48AA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{181C7F1B-F052-4569-9C39-624D0CBCADAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{181C7F1B-F052-4569-9C39-624D0CBCADAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{181C7F1B-F052-4569-9C39-624D0CBCADAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{181C7F1B-F052-4569-9C39-624D0CBCADAA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
