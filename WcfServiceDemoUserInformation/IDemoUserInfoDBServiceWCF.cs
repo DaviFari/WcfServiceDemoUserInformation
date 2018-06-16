@@ -15,5 +15,12 @@ namespace WcfServiceDemoUserInformation
         UserInformation find(string password);
         [OperationContract]
         List<UserInformation> findAll();
+        [OperationContract]
+        bool insert(string name, string password);
+        [OperationContract]
+        bool delete(string password);
+        [OperationContract]
+        bool Edit(string name, string password);
+
     }
 }

@@ -105,6 +105,24 @@ namespace WinFormWCFServiceDemoUserInfo.ServiceReferenceDemoUser1 {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IDemoUserInfoDBServiceWCF/findAll", ReplyAction="http://tempuri.org/IDemoUserInfoDBServiceWCF/findAllResponse")]
         System.Threading.Tasks.Task<WinFormWCFServiceDemoUserInfo.ServiceReferenceDemoUser1.UserInformation[]> findAllAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IDemoUserInfoDBServiceWCF/insert", ReplyAction="http://tempuri.org/IDemoUserInfoDBServiceWCF/insertResponse")]
+        bool insert(string name, string password);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IDemoUserInfoDBServiceWCF/insert", ReplyAction="http://tempuri.org/IDemoUserInfoDBServiceWCF/insertResponse")]
+        System.Threading.Tasks.Task<bool> insertAsync(string name, string password);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IDemoUserInfoDBServiceWCF/delete", ReplyAction="http://tempuri.org/IDemoUserInfoDBServiceWCF/deleteResponse")]
+        bool delete(string password);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IDemoUserInfoDBServiceWCF/delete", ReplyAction="http://tempuri.org/IDemoUserInfoDBServiceWCF/deleteResponse")]
+        System.Threading.Tasks.Task<bool> deleteAsync(string password);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IDemoUserInfoDBServiceWCF/Edit", ReplyAction="http://tempuri.org/IDemoUserInfoDBServiceWCF/EditResponse")]
+        bool Edit(string name, string password);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IDemoUserInfoDBServiceWCF/Edit", ReplyAction="http://tempuri.org/IDemoUserInfoDBServiceWCF/EditResponse")]
+        System.Threading.Tasks.Task<bool> EditAsync(string name, string password);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -148,6 +166,30 @@ namespace WinFormWCFServiceDemoUserInfo.ServiceReferenceDemoUser1 {
         
         public System.Threading.Tasks.Task<WinFormWCFServiceDemoUserInfo.ServiceReferenceDemoUser1.UserInformation[]> findAllAsync() {
             return base.Channel.findAllAsync();
+        }
+        
+        public bool insert(string name, string password) {
+            return base.Channel.insert(name, password);
+        }
+        
+        public System.Threading.Tasks.Task<bool> insertAsync(string name, string password) {
+            return base.Channel.insertAsync(name, password);
+        }
+        
+        public bool delete(string password) {
+            return base.Channel.delete(password);
+        }
+        
+        public System.Threading.Tasks.Task<bool> deleteAsync(string password) {
+            return base.Channel.deleteAsync(password);
+        }
+        
+        public bool Edit(string name, string password) {
+            return base.Channel.Edit(name, password);
+        }
+        
+        public System.Threading.Tasks.Task<bool> EditAsync(string name, string password) {
+            return base.Channel.EditAsync(name, password);
         }
     }
 }

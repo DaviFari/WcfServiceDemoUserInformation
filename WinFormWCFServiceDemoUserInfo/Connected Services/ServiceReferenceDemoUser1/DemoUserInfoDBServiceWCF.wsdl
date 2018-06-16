@@ -19,6 +19,24 @@
   <wsdl:message name="IDemoUserInfoDBServiceWCF_findAll_OutputMessage">
     <wsdl:part name="parameters" element="tns:findAllResponse" />
   </wsdl:message>
+  <wsdl:message name="IDemoUserInfoDBServiceWCF_insert_InputMessage">
+    <wsdl:part name="parameters" element="tns:insert" />
+  </wsdl:message>
+  <wsdl:message name="IDemoUserInfoDBServiceWCF_insert_OutputMessage">
+    <wsdl:part name="parameters" element="tns:insertResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDemoUserInfoDBServiceWCF_delete_InputMessage">
+    <wsdl:part name="parameters" element="tns:delete" />
+  </wsdl:message>
+  <wsdl:message name="IDemoUserInfoDBServiceWCF_delete_OutputMessage">
+    <wsdl:part name="parameters" element="tns:deleteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDemoUserInfoDBServiceWCF_Edit_InputMessage">
+    <wsdl:part name="parameters" element="tns:Edit" />
+  </wsdl:message>
+  <wsdl:message name="IDemoUserInfoDBServiceWCF_Edit_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EditResponse" />
+  </wsdl:message>
   <wsdl:portType name="IDemoUserInfoDBServiceWCF">
     <wsdl:operation name="find">
       <wsdl:input wsaw:Action="http://tempuri.org/IDemoUserInfoDBServiceWCF/find" message="tns:IDemoUserInfoDBServiceWCF_find_InputMessage" />
@@ -27,6 +45,18 @@
     <wsdl:operation name="findAll">
       <wsdl:input wsaw:Action="http://tempuri.org/IDemoUserInfoDBServiceWCF/findAll" message="tns:IDemoUserInfoDBServiceWCF_findAll_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IDemoUserInfoDBServiceWCF/findAllResponse" message="tns:IDemoUserInfoDBServiceWCF_findAll_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="insert">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDemoUserInfoDBServiceWCF/insert" message="tns:IDemoUserInfoDBServiceWCF_insert_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDemoUserInfoDBServiceWCF/insertResponse" message="tns:IDemoUserInfoDBServiceWCF_insert_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="delete">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDemoUserInfoDBServiceWCF/delete" message="tns:IDemoUserInfoDBServiceWCF_delete_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDemoUserInfoDBServiceWCF/deleteResponse" message="tns:IDemoUserInfoDBServiceWCF_delete_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Edit">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDemoUserInfoDBServiceWCF/Edit" message="tns:IDemoUserInfoDBServiceWCF_Edit_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDemoUserInfoDBServiceWCF/EditResponse" message="tns:IDemoUserInfoDBServiceWCF_Edit_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IDemoUserInfoDBServiceWCF" type="tns:IDemoUserInfoDBServiceWCF">
@@ -42,6 +72,33 @@
     </wsdl:operation>
     <wsdl:operation name="findAll">
       <soap:operation soapAction="http://tempuri.org/IDemoUserInfoDBServiceWCF/findAll" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insert">
+      <soap:operation soapAction="http://tempuri.org/IDemoUserInfoDBServiceWCF/insert" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="delete">
+      <soap:operation soapAction="http://tempuri.org/IDemoUserInfoDBServiceWCF/delete" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Edit">
+      <soap:operation soapAction="http://tempuri.org/IDemoUserInfoDBServiceWCF/Edit" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
